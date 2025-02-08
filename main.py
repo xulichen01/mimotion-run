@@ -195,13 +195,13 @@ class MiMotion():
         try:
             min_step = math.ceil(int(self.check_item.get("min_step", 10000))*step_ratio)
         except Exception as e:
-            print("初始化步数失败: 已将最小值设置为 19999", e)
-            min_step = 10000
+            print("初始化步数失败: 已将最小值设置为 17542", e)
+            min_step = 17542
         try:
             max_step = math.ceil(int(self.check_item.get("max_step", 19999))*step_ratio)
         except Exception as e:
-            print("初始化步数失败: 已将最大值设置为 19999", e)
-            max_step = 19999
+            print("初始化步数失败: 已将最大值设置为 25941", e)
+            max_step = 25941
 
         step = str(random.randint(min_step, max_step))
         if ("+86" in user) or "@" in user:
